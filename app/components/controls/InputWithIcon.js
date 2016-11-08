@@ -5,8 +5,12 @@ import {
     Text, TextInput,
     View,
 } from 'react-native'
+<<<<<<< HEAD
 // import Icon from 'react-native-vector-icons/FontAwesome'
 import { FontAwesome } from '@exponent/vector-icons';
+=======
+import Icon from 'react-native-vector-icons/FontAwesome'
+>>>>>>> 1065eae48ff06cb70a187260df8b04b2e79cd975
 
 import c from '../../constants'
 import s from '../../styles'
@@ -36,6 +40,7 @@ class Input extends Component {
         })
     }
     render() {
+<<<<<<< HEAD
         const {color, icon, style, iconRight, value} = this.props
         return (
             <Animated.View style={[styles.inputWrapper, {
@@ -46,12 +51,21 @@ class Input extends Component {
                     <FontAwesome name={icon} size={15}
                         color = {color} />
                 )}
+=======
+        return (
+            <Animated.View style={[styles.inputWrapper, {
+                    opacity: this.props.value ? 1 : this.state.inputOpacity
+                }]}>
+                <Icon name={this.props.icon} size={15}
+                    color = {colors.cosmiclatte} />
+>>>>>>> 1065eae48ff06cb70a187260df8b04b2e79cd975
                 <TextInput {...this.props}
                     ref={textInput => this.textInput = textInput}
                     underlineColorAndroid='transparent'
                     blurOnSubmit={true}
                     onFocus={this._toggleFocused}
                     onBlur={this._toggleFocused}
+<<<<<<< HEAD
                     autoCorrect={false}
                     style={[styles.textInput, {color: color},
                         iconRight ? {paddingRight: 10} : {paddingLeft: 10}
@@ -63,6 +77,12 @@ class Input extends Component {
                     <FontAwesome name={this.props.icon} size={15}
                         color = {color} />
                 )}
+=======
+                    autoCorrect={false} style={styles.textInput}
+                    placeholderTextColor={colors.cosmiclatte}
+                    onSubmitEditing={this._blur}
+                    />
+>>>>>>> 1065eae48ff06cb70a187260df8b04b2e79cd975
             </Animated.View>
         )
     }
@@ -73,11 +93,23 @@ export default Input
 const styles = StyleSheet.create({
     inputWrapper: {
         borderBottomWidth: 1,
+<<<<<<< HEAD
         flexDirection: 'row', alignItems: 'center',
     },
     textInput: {
         flex: 1,
         fontWeight: '100',
         padding: 0,
+=======
+        borderBottomColor: colors.cosmiclatte,
+        flexDirection: 'row', alignItems: 'center',
+        marginTop: 10,
+    },
+    textInput: {
+        flex: 1,
+        color: colors.cosmiclatte,
+        fontWeight: '100',
+        padding: 0, paddingLeft: 10,
+>>>>>>> 1065eae48ff06cb70a187260df8b04b2e79cd975
     },
 })

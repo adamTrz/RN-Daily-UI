@@ -92,6 +92,7 @@ const Modal = ({
     return (
         <View style={styles.modal}>
             <Input onChangeText={onUsernameChange}
+<<<<<<< HEAD
                 color={colors.cosmiclatte}
                 style={{marginTop: 10}}
                 value={username} icon='user'
@@ -99,12 +100,20 @@ const Modal = ({
             <Input onChangeText={onMailChange}
                 color={colors.cosmiclatte}
                 style={{marginTop: 10}}
+=======
+                value={username} icon='user'
+                placeholder={username_placeholder} />
+            <Input onChangeText={onMailChange}
+>>>>>>> 1065eae48ff06cb70a187260df8b04b2e79cd975
                 value={mail} icon='at'
                 keyboardType='email-address'
                 placeholder={mail_placeholder} />
             <Input onChangeText={onPassChange}
+<<<<<<< HEAD
                 color={colors.cosmiclatte}
                 style={{marginTop: 10}}
+=======
+>>>>>>> 1065eae48ff06cb70a187260df8b04b2e79cd975
                 value={pass} icon='lock'
                 placeholder={pass_placeholder}
                 secureTextEntry
