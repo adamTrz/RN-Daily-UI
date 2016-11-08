@@ -1,0 +1,17 @@
+{
+  "name": "rn-daily-ui",
+  "version": "0.0.0",
+  "description": "Hello Exponent!",
+  "author": null,
+  "private": true,
+  "main": "main.js",
+  "dependencies": {
+    "@exponent/ex-navigation": "^2.0.0",
+    "@exponent/vector-icons": "^2.0.3",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "exponent": "~11.0.0",
+    "moment": "^2.15.2",
+    "react": "~15.3.2",
+    "react-native": "git+https://github.com/exponentjs/react-native#sdk-11.0.1"
+  }
+}
